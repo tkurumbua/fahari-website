@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fahari Suggestion Box</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    body {
+      font-family: Arial;
+      background:#0B3D91;
+      color:white;
+      text-align:center;
+      padding:40px;
+    }
+    .box {
+      background:black;
+      padding:30px;
+      border-radius:10px;
+      max-width:500px;
+      margin:auto;
+    }
+    textarea {
+      width:100%;
+      height:120px;
+      border-radius:5px;
+      padding:10px;
+    }
+    button {
+      background:#0B3D91;
+      color:white;
+      border:none;
+      padding:10px 20px;
+      margin-top:10px;
+      cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Fahari Communications Media Ltd</h1>
+
+<div class="box">
+  <h2>Anonymous Suggestion</h2>
+  <textarea id="message" placeholder="Write your suggestion here..."></textarea>
+  <br>
+  <button onclick="submitSuggestion()">Submit</button>
+  <p id="response"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
