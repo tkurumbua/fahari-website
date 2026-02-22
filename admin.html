@@ -1,15 +1,17 @@
-<script>
-  const password = prompt("Enter Admin Password:");
-  if (password !== "Fahari2026") {
-    alert("Access Denied!");
-    window.location.href = "index.html";
-  }
-</script>
 <!DOCTYPE html>
 <html>
 <head>
   <title>Admin Dashboard</title>
+  <script>
+    const password = prompt("Enter Admin Password:");
+    if (password !== "Fahari2026") {
+      alert("Access Denied!");
+      window.location.href = "index.html";
+    }
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
   <style>
     body { font-family: Arial; background:#0B3D91; color:white; padding:30px;}
     table { width:100%; background:black; border-collapse:collapse;}
